@@ -58,9 +58,7 @@
 			> .content {
 				@include vendor('transition', 'transform #{_duration(fade-in)} ease');
 				@include vendor('transform', 'translateZ(0)');
-				position: relative;
-				width: 35%;
-				margin: 0;
+
 			}
 
 			&.left {
