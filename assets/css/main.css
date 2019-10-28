@@ -812,7 +812,7 @@ input, select, textarea {
 					width: calc(25% - 0.375em);
 				}
 
-		@media screen and (max-width: 480px) {
+		@media screen and (max-width: 800px) {
 
 			form > .fields {
 				width: calc(100% + 2em);
@@ -1071,7 +1071,7 @@ input, select, textarea {
 				width: 100%;
 			}
 
-		@media screen and (max-width: 480px) {
+		@media screen and (max-width: 800px) {
 
 			ul.actions:not(.fixed) {
 				-moz-flex-direction: column;
@@ -1768,7 +1768,7 @@ input, select, textarea {
 				transform: translateY(7em);
 			}
 
-		@media screen and (max-width: 480px) {
+		@media screen and (max-width: 800px) {
 
 			.gallery {
 				-moz-flex-wrap: nowrap;
@@ -2058,7 +2058,7 @@ input, select, textarea {
 
 		}
 
-		@media screen and (max-width: 480px) {
+		@media screen and (max-width: 800px) {
 			.main > .content {
 				max-width: calc(100% - 1.5em);
 			}
@@ -2141,7 +2141,8 @@ input, select, textarea {
 /* Intro */
 
 	#intro {
-		background: url("images/overlay.png"), url("../../images/intro.jpg");
+    background-color: #1a4a3d;
+		/* background: url("images/overlay.png"), url("../../images/intro.jpg"); */
 		background-size: 256px 256px, cover;
 		background-attachment: fixed, fixed;
 		background-position: top left, bottom center;
@@ -2151,7 +2152,7 @@ input, select, textarea {
 /* One */
 
 	#one {
-		background: url("images/overlay.png"), url("../../images/one.jpg");
+		background-color: #e6e6e6;
 		background-size: 256px 256px, cover;
 		background-attachment: fixed, fixed;
 		background-position: top left, center center;
@@ -2160,17 +2161,42 @@ input, select, textarea {
 /* Two */
 
 	#two {
-		background: url("images/overlay.png"), url("../../images/two.jpg");
+		background-color: #929c99;
 		background-size: 256px 256px, cover;
 		background-attachment: fixed, fixed;
 		background-position: top left, center center;
 	}
 
+  #skills ul {
+    display: block;
+    margin: 0 auto;
+    padding: 0
+    max-width: 800px;
+    text-align: center;
+  }
+
+  #skills li {
+    display: inline-block;
+    margin: 7px;
+    padding: 5px 10px;
+    background: white;
+    box-shadow: -1px -1px 5px 0px rgba(0,0,0,0.75);
+  }
+
+  #gallery article {
+    padding: 5px;
+  }
+
+  #gallery .from-right p {
+    text-align: center;
+    padding-top: 20px;
+  }
 /* Contact */
 
 	#contact {
 		overflow: hidden;
 		padding-bottom: 0;
+    background-color: #39454b;
 	}
 
 		#contact .box {
@@ -2198,7 +2224,39 @@ input, select, textarea {
 			}
 		}
 
-		@media screen and (max-width: 480px) {
+    @media screen and (max-width: 800px) and  (min-width: 480px) {
+      #gallery article {
+        width: 373px;
+        height: 100%;
+      }
+      #gallery {
+        align-items: center;
+      }
+    }
+
+    @media screen and (min-width: 661px) {
+      #profile {
+        margin-right: 30px;
+        height: 430px;
+        width: 255px
+      }
+
+      #about-me {
+        display:flex;
+        justify-content: flex-start;
+      }
+    }
+
+    @media screen and (max-width: 660px){
+      #profile {
+        width: 50%;
+        height: 50%;
+      }
+      #about-me {
+        justify-content: center
+      }
+    }
+		@media screen and (max-width: 800px) {
 			#contact .box {
 				padding: 1em 1em 2em 1em;
 			}

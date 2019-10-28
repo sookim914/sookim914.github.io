@@ -5,6 +5,7 @@
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
         <link rel="stylesheet" href="assets/css/main.css" />
+        <link href="https://fonts.googleapis.com/css?family=Bree+Serif|Hind+Madurai|Raleway|Stoke&display=swap" rel="stylesheet">
         <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
       </head>
       <body class="is-preload">
@@ -13,12 +14,12 @@
           <header id="header">
             <h1></h1>
             <nav>
-              <ul>
+              <ul style="font-family: 'Hind Madurai', sans-serif;">
                 <li><a href="#intro">Intro</a></li>
                 <li><a href="#one">About Me</a></li>
                 <li><a href="#two">Skills</a></li>
                 <li><a href="#work">Portfolio</a></li>
-                <li><a href="#work">Resume</a></li>
+                <li><a href="images/resume_soo.pdf">Resume</a></li>
                 <li><a href="#contact">Contact</a></li>
               </ul>
             </nav>
@@ -28,10 +29,9 @@
           <section id="intro" class="main style1 dark fullscreen">
             <div class="content">
               <header>
-                <h2>Soo Kim</h2>
-                <h4>Full Stack Engineer</h4>
+                <h2 style="font-family: 'Hind Madurai', sans-serif;">Soo Kim</h2>
               </header>
-              <p>Formal elementary school teacher,<br /> creative problem solver </p>
+              <p style="font-family: 'Raleway', sans-serif; font-size: 20px;">Software engineer and a former elementary school teacher, <br /> who enjoys solving problems and perserveres through challenges<br /> </p>
               <footer>
                 <a href="#one" class="button style2 down">More</a>
               </footer>
@@ -40,24 +40,44 @@
 
         <!-- One -->
           <section id="one" class="main style2 right dark fullscreen">
-            <div class="content box style2">
+            <div style="background-color: #e6e6e6;" class="content box style2" >
               <header>
                 <h2>About Me</h2>
               </header>
-              <p>I am a software engineer and an educator, who enjoys solving problems. I spent five years in a classroom teaching underprivileged students in Washington D.C. and Lynn, MA. From my teaching experience, I learned to be eager to solve problems and find the best solution in a creative way. As education technology evolved and was implemented in classrooms , I became interested in coding, which I found very logical and fun to work on. I am hoping to use my skills as a software engineer to continue to solve problems. </p>
+              <div id="about-me">
+                <img id="profile" src="/images/sookim.jpeg" alt="profile picture"/>
+                <p>I am a software engineer and an educator who enjoys solving problems. After graduating from Smith College in Northampton, MA, I spent five years in a classroom teaching underprivileged students in order to be part of urban education reform. From my teaching experience, I learned to be eager and perservere to solve problems, find the best solution in a creative way, and always stay motivated.<br/>As education technology evolved and was implemented in classrooms, I became interested in coding, which I found very logical and fun to work on. After taking several online courses, I decided to join General Assembly Software Engineer Immersive Program to learn cutting-edge frontend and backend technologies. Throughout the program, I learned various programming languages and about tech industry. I am hoping to use my skills as a software engineer to continue to solve problems in our society! </p>
+              </div>
             </div>
             <a href="#two" class="button style2 down anchored">Next</a>
           </section>
 
         <!-- Two -->
-          <section id="two" class="main style2 left dark fullscreen">
-            <div class="content box style2">
+          <section id="two" class="main style2 left dark fullscreen" style="min-height: 70%">
+            <div id="skills" style="background-color: #929c99;" class="content box style2">
               <header>
-                <h2>Skills</h2>
+                <h2 style="text-align: center">Skills</h2>
               </header>
-              <p>Lorem ipsum dolor sit amet et sapien sed elementum egestas dolore condimentum.
-              Fusce blandit ultrices sapien, in accumsan orci rhoncus eu. Sed sodales venenatis arcu,
-              id varius justo euismod in. Curabitur egestas consectetur magna.</p>
+                <ul>
+                  <li>React</li>
+                  <li>JavaScript</li>
+                  <li>Ruby on Rails</li>
+                  <li>MongoDB</li>
+                  <li>Atom</li>
+                  <li>Git</li>
+                  <li>AJAX</li>
+                  <li>CSS</li>
+                  <li>Sass</li>
+                  <li>Node.js</li>
+                  <li>Bootstrap</li>
+                  <li>Github</li>
+                  <li>Ruby</li>
+                  <li>AXIOS</li>
+                  <li>jQuery</li>
+                  <li>Amazon Web Services (AWS)</li>
+                  <li>PostgresSQL</li>
+                  <li>Ruby</li>
+                </ul>
             </div>
             <a href="#work" class="button style2 down anchored">Next</a>
           </section>
@@ -66,31 +86,44 @@
           <section id="work" class="main style3 primary">
             <div class="content">
               <header>
-                <h2>Portfolio</h2>
-                <p>Lorem ipsum dolor sit amet et sapien sed elementum egestas dolore condimentum.
-                Fusce blandit ultrices sapien, in accumsan orci rhoncus eu. Sed sodales venenatis
-                arcu, id varius justo euismod in. Curabitur egestas consectetur magna vitae.</p>
+                <h2>Projects</h2>
               </header>
 
               <!-- Gallery  -->
-                <div class="gallery">
+                <div id ="gallery" class="gallery">
                   <article class="from-left">
-                    <a href="images/fulls/01.jpg" class="image fit"><img src="images/projects/01.png"  title="The Anonymous Red" alt="" /></a>
+                    <a class="image fit"><img src="images/projects/noms.png"  title="noms" alt="noms" /></a>
                   </article>
-                  <article class="from-right">
-                    <a href="images/fulls/02.jpg" class="image fit"><img src="images/thumbs/02.jpg" title="Airchitecture II" alt="" /></a>
-                  </article>
-                  <article class="from-left">
-                    <a href="images/fulls/03.jpg" class="image fit"><img src="images/thumbs/03.jpg" title="Air Lounge" alt="" /></a>
-                  </article>
-                  <article class="from-right">
-                    <a href="images/fulls/04.jpg" class="image fit"><img src="images/thumbs/04.jpg" title="Carry on" alt="" /></a>
+                  <article  class="from-right">
+                    <br/>
+                    <h4 style="font-size: 20px"> Noms: Capstone Project</h4>
+                    <br/>
+                    <p > Rate your dish! I created a MERN (MongoDB, Express, React, Node.js) stack app that allows users to search a restaurant, review the dish, and upload the picture. Frontend is built in React and backend in Express and MongoDB database system. I integrated third party API (Foursquare) to get restaurant information and AWS s3 for the file storage.</p>
                   </article>
                   <article class="from-left">
-                    <a href="images/fulls/05.jpg" class="image fit"><img src="images/thumbs/05.jpg" title="The sparkling shell" alt="" /></a>
+                    <a class="image fit"><img src="images/projects/pomodoro.png" title="pomodoro" alt="pomodoro" /></a>
                   </article>
                   <article class="from-right">
-                    <a href="images/fulls/06.jpg" class="image fit"><img src="images/thumbs/06.jpg" title="Bent IX" alt="" /></a>
+                    <br/>
+                    <h4 style="font-size: 20px">Pomodoro Timer</h4>
+                    <p>Stay productive!  Promodoro technique is meant to boost productivity by breaking down one task into several intervals (usually 25 minutes each). This is a full-stack CRUD pomodoro app built in JavaScript, AJAX, and jQuery, using Ruby on Rails for backend API. Users can create a timer for their own tasks.</p>
+                  </article>
+                  <article class="from-left">
+                    <a href="images/fulls/05.jpg" class="image fit"><img src="images/projects/photonix.png" title="photonix" alt="photonix" /></a>
+                  </article>
+                  <article class="from-right">
+                    <br/>
+                    <h4 style="font-size: 20px">photonix</h4>
+                    <br/>
+                    <p>Share your favorite photos and/or gifs! photonix is a single page app built in JavaScript, AJAX, and jQuery, using Express and MongoDB for backend API. Users can upload and share their images!</p>
+                  </article>
+                  <article class="from-left">
+                    <a href="images/fulls/05.jpg" class="image fit"><img src="images/projects/tictactoe.png" title="The sparkling shell" alt="tictactoe-game" /></a>
+                  </article>
+                  <article class="from-right">
+                    <br/>
+                    <h4 style="font-size: 20px;" >Tic-Tac-Toe</h4>
+                    <p>A single page Tic-Tac-Toe game built in JavaScript, AJAX, and jQuery, using Rails API for user authentication and SQL for game data storage.</p>
                   </article>
                 </div>
 
@@ -101,21 +134,13 @@
           <section id="contact" class="main style3 secondary">
             <div class="content">
               <header>
-                <h2>Let's Connect</h2>
-                <p>Lorem ipsum dolor sit amet et sapien sed elementum egestas dolore condimentum.</p>
+                <h2 style="color: #D3D3D3; font-size: 30px">Let's connect</h2>
               </header>
-              <div class="box">
-                <form method="post" action="#">
-                  <div class="fields">
-                    <div class="field half"><input type="text" name="name" placeholder="Name" /></div>
-                    <div class="field half"><input type="email" name="email" placeholder="Email" /></div>
-                    <div class="field"><textarea name="message" placeholder="Message" rows="6"></textarea></div>
-                  </div>
-                  <ul class="actions special">
-                    <li><input type="submit" value="Send Message" /></li>
-                  </ul>
-                </form>
-              </div>
+              <div style="display:flex; justify-content: flex-start">
+              <p style="margin-right: 30px"><a href="mailto: soojeong914@gmail.com"><img src='images/contact/email.png'/></a></p>
+              <p style="margin-right: 30px"><a href="https://github.com/sookim914"><img alt="sookim914 github"src='images/contact/github.png'/></a></p>
+              <p style="margin-right: 10px"><a href="https://www.linkedin.com/in/sookim914/"><img style="width: 32px; height: 32px;" alt="linkedin url" src='images/contact/linkedin.png'/></a></p>
+             </div>
             </div>
           </section>
 
