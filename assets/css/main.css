@@ -2072,3 +2072,12 @@ input, select, textarea {
 				padding: 1em 1em 2em 1em;
 			}
 		}
+
+    #resume-button {
+      font-family: 'Hind Madurai', sans-serif;
+      font-size: 15px;
+      border-radius: 1.5em;
+      background-color:#929c99;
+    }
+
+    @media screen and (max-width:)
